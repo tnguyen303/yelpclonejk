@@ -305,3 +305,35 @@ button:hover{
     display: none;
 }
 
+@media only screen and (max-width: 600px){
+    body {
+        height: 100%;
+        width: 100%;
+
+    }
+    .header-content{
+        height: 100%;
+        width: 100%;
+    }
+    #thank-you {
+        height: 160px;
+        padding-top: 27px;  
+        width: 100%;
+        background-color: #d0ecfb;
+        box-shadow: 1px 1px 10px #ccc;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 700;
+        color: #333333;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 35px;
+        
+    }
+    .thank-you-message{
+        font-weight: 400;
+        font-size: .8em;
+    }
+
+    
+}

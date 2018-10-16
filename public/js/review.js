@@ -15,11 +15,6 @@ $(document).ready(function(){
         $(".heading-link a").attr("href", newURL)
         $('.review-input').val(`${dataList[i].personal_review.personal_review_text}`)
         $(".i-selector-star").attr('data-stars', dataList[i].personal_review.personal_review_rating )
-        // $(".thank-you-header").append(`${dataList[i].name }`)
-        // $(".see-review").attr("href", newURL)
-        
-
-
       }
     }
     
@@ -40,7 +35,6 @@ const addReview = function(){
     url: reviewUrl
   } 
 
-    // console.log(newReview)
     $.ajax({url:"/api/review", method:"POST", data:newReview}).then(function (data){
       $('.review-input').empty();
       $('#content').empty();
